@@ -11,10 +11,14 @@ const Sidebar = ({ profile, social }) => (
         <h2 className="font-header font-light text-front text-2xl leading-none mb-4">
           {profile.profession}
         </h2>
-        <h1 className="font-header font-black text-front text-5xl leading-none break-words mb-6">
+        <h1 className="font-header font-black text-front text-3xl leading-none break-words mb-6">
           {profile.name}
         </h1>
-        {profile.image && (
+        <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
+          Connect
+        </h5>
+        <SocialLinks social={social} />
+        {/* {profile.image && (
           <ProfileImage image={profile.image} name={profile.name} />
         )}
         <br />
@@ -23,15 +27,14 @@ const Sidebar = ({ profile, social }) => (
             location={profile.location}
             relocation={profile.relocation}
           />
-        )}
+        )} */}
       </div>
-
-      <div className="pt-8 pb-12 lg:py-0">
+      {/* <div className="pt-8 pb-12 lg:py-0">
         <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
           Connect
         </h5>
         <SocialLinks social={social} />
-      </div>
+      </div> */}
     </div>
   </aside>
 )

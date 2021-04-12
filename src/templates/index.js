@@ -18,9 +18,9 @@ const IndexPage = ({ data }) => {
       <StructuredData profile={profile} social={social.nodes} />
       <CustomFonts />
 
-      <Header initials={profile.initials} />
+      {/* <Header initials={profile.initials} /> */}
 
-      <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
+      <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-16 flex flex-wrap py-16">
         <Sidebar profile={profile} social={social.nodes} />
 
         <MainContent
@@ -31,10 +31,10 @@ const IndexPage = ({ data }) => {
         />
       </div>
 
-      <Footer
+      {/* <Footer
         name={profile.name}
         showThemeLogo={site.siteMetadata.showThemeLogo}
-      />
+      /> */}
     </div>
   )
 }

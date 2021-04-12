@@ -4,14 +4,14 @@ import { SocialType, arrayOf, shape } from "../../types"
 
 const SocialLinks = ({ social }) => {
   return (
-    <div className="pl-3">
+    <div className="mb-6">
       {social.map(({ name, url }, i) => {
-        const colorsClass =
-          i % 2 === 0 ? "bg-front text-back-light" : "bg-back-light text-front"
+        const colorsClass = "bg-front text-back-light";
+          //i % 2 === 0 ? "bg-front text-back-light" : "bg-back-light text-front"
         return (
           <a
             aria-label={name}
-            className={`inline-flex w-12 h-12 justify-center items-center rounded-full -ml-3 ${colorsClass} hover:shadow-lg transition-shadow duration-150`}
+            className={`inline-flex w-12 h-12 justify-center items-center rounded-full mr-2 ${colorsClass} hover:shadow-lg transition-shadow duration-150`}
             href={url}
             key={name}
             rel="noopener noreferrer"
