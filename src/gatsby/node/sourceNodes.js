@@ -13,6 +13,7 @@ module.exports = ({ actions }) => {
       description: String
       icon: String
       image: File @fileByRelativePath
+      pubimage: String
       name: String!
       status: String
       tags: [String]

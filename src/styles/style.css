@@ -8,3 +8,17 @@ body {
    background-color: rgb(232, 234, 239);
 
 }
+
+.Markdown a:link {
+   color: #2e6dcc;
+   text-decoration: none;
+}
+
+.Markdown a:visited {
+   color: #cc2ecc;
+   text-decoration: none;
+}
+
+.Markdown a:hover {
+   text-decoration: underline;
+}

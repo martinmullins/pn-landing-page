@@ -7,6 +7,7 @@ export const ProjectType = {
   image: shape({
     childImageSharp: object.isRequired,
   }),
+  pubimage: string,
   name: string.isRequired,
   status: string,
   tags: arrayOf(string),
@@ -22,6 +23,7 @@ export const query = graphql`
         gatsbyImageData(width: 640, quality: 85)
       }
     }
+    pubimage
     name
     status
     tags

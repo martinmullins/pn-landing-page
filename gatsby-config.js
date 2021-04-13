@@ -1,9 +1,9 @@
 module.exports =  {
   siteMetadata: {
-    description: "Personal page of John Doe",
+    description: "Personal page of Martin Mullins",
     locale: "en",
     showThemeLogo: true,
-    title: "John Doe",
+    title: "PossibleNull - Martin Mullins",
     formspreeEndpoint: "https://formspree.io/f/{your-id}",
   },
   plugins: [
@@ -29,5 +29,17 @@ module.exports =  {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `MM`,
+        short_name: `MM`,
+        start_url: `/`,
+        background_color: `#efefef`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/images/icon.png`
+      },
+     },
   ],
 }

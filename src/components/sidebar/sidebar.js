@@ -11,7 +11,7 @@ const Sidebar = ({ profile, social }) => (
         <h2 className="font-header font-light text-front text-2xl leading-none mb-4">
           {profile.profession}
         </h2>
-        <h1 className="font-header font-black text-front text-3xl leading-none break-words mb-6">
+        <h1 className="font-header font-black text-front text-3xl md:text-4xl leading-none break-words mb-6">
           {profile.name}
         </h1>
         <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">

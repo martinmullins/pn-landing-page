@@ -6,12 +6,12 @@ const SocialLinks = ({ social }) => {
   return (
     <div className="mb-6">
       {social.map(({ name, url }, i) => {
-        const colorsClass = "bg-front text-back-light";
+        const colorsClass = "bg-back-light text-front";
           //i % 2 === 0 ? "bg-front text-back-light" : "bg-back-light text-front"
         return (
           <a
             aria-label={name}
-            className={`inline-flex w-12 h-12 justify-center items-center rounded-full mr-2 ${colorsClass} hover:shadow-lg transition-shadow duration-150`}
+            className={`inline-flex w-9 h-9 justify-center items-center rounded-full`}
             href={url}
             key={name}
             rel="noopener noreferrer"
